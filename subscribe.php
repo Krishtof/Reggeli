@@ -1,6 +1,7 @@
 <?php
 
-$db = new PDO('mysql:host=internal-db.s198704.gridserver.com;dbname=db198704_reggeli;charset=utf8', 'db198704_reggeli', 'UzletiReggeli@2015');
+//$db = new PDO('mysql:host=internal-db.s198704.gridserver.com;dbname=db198704_reggeli;charset=utf8', 'db198704_reggeli', 'UzletiReggeli@2015');
+$db = new PDO('mysql:host=localhost;dbname=reggeli;charset=utf8', 'root', '');
 
 $stmt = $db->prepare("INSERT INTO subscribers(name, company, email) VALUES(:name,:company,:email)");
 $stmt->execute(array(':name' => $_POST['name'], ':company' => $_POST['company'], ':email' => $_POST['email']));
