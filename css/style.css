@@ -155,7 +155,8 @@ header {
     background-position-y: -4px; } }
 @media (min-width: 992px) {
   #coverimg {
-    float: right; } }
+    float: right;
+    margin-top: 70px; } }
 #description {
   padding-bottom: 50px; }
   #description h1 {
@@ -165,7 +166,7 @@ header {
     text-align: left;
     padding-left: 4vw;
     line-height: 30px; }
-  #description p {
+  #description p, #description ul {
     line-height: 20px;
     text-align: left;
     padding-left: 4vw;
@@ -177,7 +178,7 @@ header {
   #description h2 {
     color: #1A4974;
     padding-left: 4vw;
-    padding-top: 170px;
+    padding-top: 160px;
     padding-bottom: 10px; }
   #description h2:before {
     content: "";
@@ -190,7 +191,7 @@ header {
     display: inline-block;
     padding-right: 10px; }
   @media only screen and (min-width: 1170px) {
-    #description p {
+    #description p, #description ul {
       font-size: 16px;
       font-size: 1rem; } }
 
@@ -219,6 +220,11 @@ header {
   #register form #submit:hover {
     background-color: #962E35;
     color: #ECECEC; }
+  #register h2 {
+    padding-left: 0px;
+    padding-top: 0px; }
+  #register h2:before {
+    content: none; }
 
 #cd-timeline {
   position: relative;
