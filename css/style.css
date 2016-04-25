@@ -164,12 +164,12 @@ header {
     font-size: 1.7rem;
     text-transform: uppercase;
     text-align: left;
-    padding-left: 4vw;
+    padding-left: 0px;
     line-height: 30px; }
   #description p, #description ul {
     line-height: 20px;
     text-align: left;
-    padding-left: 4vw;
+    padding-left: 0px;
     padding-top: 10px;
     color: #1A4973;
     width: 100%;
@@ -177,7 +177,7 @@ header {
     font-size: 0.875rem; }
   #description h2 {
     color: #1A4974;
-    padding-left: 4vw;
+    padding-left: 0px;
     padding-top: 140px;
     padding-bottom: 10px; }
   #description h2:before {
@@ -194,6 +194,9 @@ header {
     #description p, #description ul {
       font-size: 16px;
       font-size: 1rem; } }
+  @media only screen and (min-width: 768px) {
+    #description p, #description ul, #description h1, #description h2, #description #register {
+      padding-left: 4vw; } }
 
 @media (max-width: 992px) {
   #coverimg {
@@ -206,7 +209,7 @@ header {
   #description h2 {
     padding-top: 10px; } }
 #register {
-  padding-left: 4vw;
+  padding-left: 0px;
   padding-top: 20px; }
   #register form input {
     height: 50px;
@@ -400,8 +403,8 @@ header {
     border-right: 7px solid #ffffff; }
   @media only screen and (min-width: 768px) {
     .cd-timeline-content h2 {
-      font-size: 20px;
-      font-size: 1.25rem; }
+      font-size: 16px;
+      font-size: 1rem; }
     .cd-timeline-content p, .cd-timeline-content ul, .cd-timeline-content li {
       font-size: 16px;
       font-size: 1rem; }
@@ -548,7 +551,7 @@ header {
 
 .helyszinleiras {
   padding-top: 20px;
-  padding-left: 4vw;
+  padding-left: 15px;
   background-color: white;
   min-height: 370px;
   padding-bottom: 30px; }
@@ -566,8 +569,8 @@ header {
   @media only screen and (min-width: 1170px) {
     .helyszinleiras h2 {
       max-width: 400px;
-      font-size: 20px;
-      font-size: 1.25rem; }
+      font-size: 16px;
+      font-size: 1rem; }
     .helyszinleiras p, .helyszinleiras h3, .helyszinleiras ul, .helyszinleiras li {
       font-size: 16px;
       font-size: 1rem;

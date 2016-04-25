@@ -191,12 +191,12 @@ header
     font-size: 1.7rem
     text-transform: uppercase
     text-align: left
-    padding-left: 4vw
+    padding-left: 0px
     line-height: 30px
   p,  ul
     line-height: 20px
     text-align: left
-    padding-left: 4vw
+    padding-left: 0px
     padding-top: 10px
     color: #1A4973
     width: 100%
@@ -204,7 +204,7 @@ header
 
   h2
     color: #1A4974
-    padding-left: 4vw
+    padding-left: 0px
     padding-top: 140px
     padding-bottom: 10px
 
@@ -222,6 +222,9 @@ header
   +MQ(L)
     p, ul
       +font-size(16px)
+  +MQ(M)
+    p, ul, h1, h2, #register
+      padding-left: 4vw
 
 @media (max-width: 992px)
 
@@ -237,7 +240,7 @@ header
     h2
       padding-top: 10px
 #register
-  padding-left: 4vw
+  padding-left: 0px
   padding-top: 20px
 
   form
@@ -400,7 +403,7 @@ header
     border-right: 7px solid $color-3
   +MQ(M)
     h2
-      +font-size(20px)
+      +font-size(16px)
     p, ul, li
       +font-size(16px)
     .cd-read-more, .cd-date
@@ -488,7 +491,7 @@ header
 
 .helyszinleiras
   padding-top: 20px
-  padding-left: 4vw
+  padding-left: 15px
   background-color: white
   min-height: 370px
   padding-bottom: 30px
@@ -508,7 +511,7 @@ header
   +MQ(L)
     h2
       max-width: 400px
-      +font-size(20px)
+      +font-size(16px)
     p, h3, ul, li
       +font-size(16px)
       max-width: 400px
