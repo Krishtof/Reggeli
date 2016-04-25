@@ -249,7 +249,7 @@ header {
     #cd-timeline {
       margin-top: 3em;
       margin-bottom: 3em;
-      margin-left: -80px; }
+      margin-left: -60px; }
       #cd-timeline::before {
         left: 50%;
         margin-left: -2px; } }
