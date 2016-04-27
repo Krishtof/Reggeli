@@ -1,0 +1,1 @@
+$(".main-carousel").flickity({autoplay:!0});

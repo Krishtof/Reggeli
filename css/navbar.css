@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Myriad_regular";
+  src: url("../fonts/Myriad-Pro_Regular.ttf"); }
+@font-face {
+  font-family: "Nexa_light";
+  src: url("../fonts/Nexa-Light.otf"); }
+@font-face {
+  font-family: "Nexa_bold";
+  src: url("../fonts/Nexa-Bold.otf"); }
+@media screen and (min-width: 768px) {
+  /* Styles before scroll */
+  #custom-nav {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    z-index: 999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: background 0.5s ease-in-out, opacity 0.5s ease;
+    -moz-transition: background 0.5s ease-in-out, opacity 0.5s ease;
+    transition: background 0.5s ease-in-out, opacity 0.5s ease; }
+
+  #custom-nav a {
+    background: transparent;
+    color: white; }
+
+  #custom-nav .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    border-top: 5px solid transparent;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-top: 0; }
+
+  #custom-nav .dropdown-menu li {
+    border-top: 1px solid white; }
+
+  #custom-nav .dropdown-menu li:last-child {
+    border-bottom: 1px solid white; }
+
+  #custom-nav .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.5s ease, padding-bottom 0.5s ease;
+    -moz-transition: padding-top 0.5s ease, padding-bottom 0.5s ease;
+    transition: padding-top 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease; }
+
+  /* Styles after scroll */
+  #custom-nav.affix {
+    top: 0;
+    min-width: 100%;
+    background-color: #f8f8f8;
+    opacity: 1;
+    -webkit-transition: background 0.5s ease-in-out, opacity 0.5s ease;
+    -moz-transition: background 0.5s ease-in-out, opacity 0.5s ease;
+    transition: background 0.5s ease-in-out, opacity 0.5s ease; }
+
+  #custom-nav.affix a {
+    color: black; }
+
+  #custom-nav.affix .container {
+    -webkit-transition: padding-top 0.5s ease, padding-bottom 0.5s ease;
+    -moz-transition: padding-top 0.5s ease, padding-bottom 0.5s ease;
+    transition: padding-top 0.5s ease, padding-top 0.5s ease, padding-bottom 0.5s ease;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+
+  #custom-nav.affix .dropdown-menu {
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+    border-top: 9px solid transparent;
+    background: #f8f8f8; } }
+@media screen and (max-width: 767px) {
+  #wrapwrap {
+    padding-top: 50px; }
+
+  .navbar-fixed-top {
+    z-index: 999; } }
+nav#custom-nav.navbar.navbar-default.navbar-fixed-top .container .navbar-header .navbar-brand {
+  background-image: url(../img/logo_w.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 180px;
+  background-size: contain;
+  margin-top: -5px; }
+
+nav#custom-nav.navbar.navbar-default.navbar-fixed-top.affix.top-nav-collapse .container .navbar-header .navbar-brand {
+  background-image: url(../img/logo_b.png);
+  background-repeat: no-repeat;
+  width: 140px;
+  background-size: contain;
+  margin-top: -2px;
+  background-position: center; }
+
+#custom-nav .container .navbar-collapse .navbar-nav .reg {
+  background-color: rgba(232, 92, 65, 0.59); }
+#custom-nav .container .navbar-collapse .navbar-nav .reg:hover {
+  background-color: #E85C41; }
+#custom-nav .container .navbar-collapse .navbar-nav .lang {
+  background-color: rgba(0, 0, 0, 0.12); }
+#custom-nav .container .navbar-collapse .navbar-nav .lang:hover {
+  background-color: rgba(0, 0, 0, 0.32); }
+
+#custom-nav.affix .container .navbar-collapse .navbar-nav .reg {
+  background-color: #E85C41; }
+  #custom-nav.affix .container .navbar-collapse .navbar-nav .reg a {
+    color: white; }
+#custom-nav.affix .container .navbar-collapse .navbar-nav .reg:hover {
+  background-color: #CE533B; }
